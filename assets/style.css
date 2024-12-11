@@ -530,14 +530,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000;
+    cursor: pointer;
 }
 
 .dentist__nav i:hover,
-.dentist__nav--active i {
+.dentist__nav .dentist__nav--active {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
 }
+
 /* End dentist */
 
 /* Begin cta */
@@ -649,10 +652,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .news__nav i:hover,
-.news__nav--active i {
+.news__nav .news__nav--active {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
@@ -849,8 +853,11 @@ footer > .content li:first-child a {
     border: 1px solid #406181;
     height: 46px;
     width: 212px;
-
     padding-left: 10px;
+}
+
+.col__input input:focus {
+    outline: none;
 }
 
 .col__input .btn {
